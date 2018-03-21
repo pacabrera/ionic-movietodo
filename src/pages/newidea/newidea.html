@@ -1,0 +1,57 @@
+<!--
+  Generated template for the NewideaPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+      <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>{{content}} Add Movie</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding style="background-color: #083f57;">
+
+  <form #form="ngForm" (ngSubmit)="add(form)">
+    <ion-item>
+      <ion-label>Title of the Movie</ion-label>
+      <ion-input type="text" placeholder="Title"  name="title" ngModel required ></ion-input>
+     
+    </ion-item>
+      <ion-item>
+        <ion-label floating>
+       Synopsis
+        </ion-label>
+        <ion-textarea type="text" name="content"  ngModel required>
+        </ion-textarea>
+      </ion-item>
+
+    <ion-item>
+      <ion-label>Genre</ion-label>
+      <ion-select ngModel name="genre" required multiple="true">
+                <ion-option>Comedy</ion-option>
+        <ion-option>Action</ion-option>
+        <ion-option>Horror</ion-option>
+        <ion-option>Romance</ion-option>
+        <ion-option>Drama</ion-option>
+        <ion-option>Animation</ion-option>
+        <ion-option>Documentary</ion-option>
+        <ion-option>Science Fiction</ion-option>
+        <ion-option>Biographical Film</ion-option>
+        <ion-option>Musical</ion-option>
+      </ion-select>
+    </ion-item>
+
+      
+      <button style="margin-top:10px" ion-button block color="skyblue" [disabled]="!form.valid">
+Add
+      </button>
+  </form>
+
+</ion-content>

@@ -1,0 +1,30 @@
+<!--
+  Generated template for the EditPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Rate Movie</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-item>
+      <ion-range min="0" max="100" pin="true" [(ngModel)]="rating">
+        <ion-icon range-left name="sad"></ion-icon>
+        <ion-icon range-right name="happy"></ion-icon>
+      </ion-range>
+    </ion-item>
+    <ion-input type="hidden"  [(ngModel)]="isWatched" value="true"></ion-input>
+    <button style="margin-top:10px" ion-button block color="success" outline (click)="save()">
+  Rate
+    </button>
+    <button style="margin-top:10px" ion-button block color="danger" outline (click)="cancel()">
+      Close
+        </button>
+</ion-content>

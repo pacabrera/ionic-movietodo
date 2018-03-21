@@ -1,0 +1,8 @@
+{
+  "name": "MovieToDo",
+  "app_id": "b6c82102",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}

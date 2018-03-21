@@ -1,0 +1,151 @@
+<style>
+ 
+ h1:hover{
+    color:#000;
+    background-color:#80f7f7;
+}
+
+  .wh{
+    background-color: #bef4e3; 
+    padding: 5px; 
+    width: 900px;
+  }
+
+  .grid1{
+    background-color: white;
+    opacity: 0.8
+  }
+
+  .grid2{
+    background-color: white;
+  }
+
+  .row1{
+    background-color: white;
+  }
+  
+#container{
+  width:1000px;
+  margin-left:auto;
+  margin-right:auto;
+  background-color:white; 
+  border-radius:10px;
+}
+
+
+#content ul{
+  list-style-type:none;
+}
+
+#content img{
+  -webkit-webkit-transition:all is ease;
+  -moz-webkit-transition:all is ease;
+  -ms-webkit-transition:all is ease;
+  -o-webkit-transition:all is ease;
+  transition:all is ease;
+  filter:blur(3px);
+  -webkit-filter: blur(3px);
+  -moz-filter: blur(3px);
+  -ms-filter: blur(3px);
+  -o-filter: blur(3px);
+}
+
+#content img:hover{
+  -webkit-webkit-transition:all is ease;
+  -moz-webkit-transition:all is ease;
+  -ms-webkit-transition:all is ease;
+  -o-webkit-transition:all is ease;
+  transition:all is ease;
+  filter:blur(0px);
+  -webkit-filter: blur(0px);
+  -moz-filter: blur(0px);
+  -ms-filter: blur(0px);
+  -o-filter: blur(0px);
+  transform:translateZ(25px) rotate(3deg);
+  border:1px solid #000000;
+  box-shadow:10px 10px 10px rgba(0,0,.5);
+}
+
+</style>
+<ion-header padding>
+  <ion-navbar >
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>POPULAR</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding style="background-color: #083f57;">
+
+
+<ion-slides pager style="background-color: white;">
+<ion-slide>
+  <img src="../assets/imgs/ironman.jpg" height="500" width="500">
+</ion-slide>
+<ion-slide>
+  <img src="../assets/imgs/bp.jpg" height="500" width="500">
+</ion-slide>
+<ion-slide>
+  <img src="../assets/imgs/CACW.jpg" height="500" width="500">
+</ion-slide>
+<ion-slide>
+  <img src="../assets/imgs/thor.jpg" height="500" width="500">
+</ion-slide>
+<ion-slide><img src="../assets/imgs/GOTG.jpg" height="500" width="500"></ion-slide>
+</ion-slides>
+
+<br>
+
+<ion-grid class="grid1" padding="4">
+  <h5 style="text-align: center;">COMING SOON</h5><br>
+
+  <ion-row style="padding: 1em;" id="content">
+   
+    <ion-col col-4 col-sm padding="5px" >
+      <img src="assets/imgs/iw.jpeg" width="100px" height="100px"> <br> <p style="font-size: 65%">Avengers: Infinity War</p>
+    </ion-col>
+
+    <ion-col col-4 col-sm padding="5px">
+     <img src="assets/imgs/o8.jpg" width="100px" height="100px"> <br> <p style="font-size: 65%; text-align: center;">Ocean's 8</p>
+    </ion-col>
+    <ion-col col-4 col-sm padding="5px">
+       <img src="assets/imgs/dp.jpg" width="100px" height="100px"> <br> <p style="font-size: 65%">Deadpool 2</p>
+    </ion-col>
+
+  </ion-row>
+</ion-grid>  
+
+<br>
+  
+<ion-grid class="grid2" padding="4">
+    <h5 style="text-align: center;">POPULAR IN THIS MONTH</h5><br>
+
+  <ion-row  style="padding: 1em;">
+    <ion-col col-4 col-sm>
+        <img src="assets/imgs/bpn.jpg" width="100px" height="100px">
+        <img src="assets/imgs/thorr.jpg" width="100px" height="100px">
+        <img src="assets/imgs/dd.jpg" width="100px" height="100px">
+    </ion-col>
+    <ion-col col-4 col-sm >
+        <img src="assets/imgs/tr.jpg" width="100px" height="100px">
+        <img src="assets/imgs/ins.jpg" width="100px" height="100px">
+        <img src="assets/imgs/sw.jpg" width="100px" height="100px">
+    </ion-col>
+    <ion-col col-4 col-sm >
+        <img src="assets/imgs/jmj.jpg" width="100px" height="100px">
+        <img src="assets/imgs/em.jpg" width="100px" height="100px">
+        <img src="assets/imgs/dw.jpg" width="100px" height="100px">
+    </ion-col>
+  </ion-row> 
+</ion-grid>
+
+</ion-content>
+
+<ion-footer  style ="text-align: center">
+      <ion-toolbar>
+        <div > All Rights Reserved | Design by Autistic</div> 
+      </ion-toolbar>
+    </ion-footer>  
+
+
